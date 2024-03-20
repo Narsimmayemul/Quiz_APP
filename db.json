@@ -1,0 +1,112 @@
+{
+    "data":[ 
+        {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Sports",
+            "question": "Which of these Russian cities did NOT contain a stadium that was used in the 2018 FIFA World Cup?",
+            "correct_answer": "Vladivostok",
+            "incorrect_answers": [
+            "Rostov-on-Don",
+            "Yekaterinburg",
+            "Kaliningrad"
+            ]
+            },
+            {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Sports",
+            "question": "Which Italian footballer told Neuer where he&#039;s putting his shot and dragging it wide, during the match Italy-Germany, UEFA EURO 2016?",
+            "correct_answer": "Pelle",
+            "incorrect_answers": [
+            "Insigne",
+            "Barzagli",
+            "Giaccherini"
+            ]
+            },
+            {
+            "type": "multiple",
+            "difficulty": "hard",
+            "category": "Sports",
+            "question": "Which female player won the gold medal of table tennis singles in 2016 Olympics Games?",
+            "correct_answer": "DING Ning (China)",
+            "incorrect_answers": [
+            "LI Xiaoxia (China)",
+            "Ai FUKUHARA (Japan)",
+            "Song KIM (North Korea)"
+            ]
+            },
+            {
+                "type": "multiple",
+                "difficulty": "easy",
+                "category": "General Knowledge",
+                "question": "Virgin Trains, Virgin Atlantic and Virgin Racing, are all companies owned by which famous entrepreneur?   ",
+                "correct_answer": "Richard Branson",
+                "incorrect_answers": [
+                "Alan Sugar",
+                "Donald Trump",
+                "Bill Gates"
+                ]
+                },
+                {
+                "type": "multiple",
+                "difficulty": "easy",
+                "category": "General Knowledge",
+                "question": "On a dartboard, what number is directly opposite No. 1?",
+                "correct_answer": "19",
+                "incorrect_answers": [
+                "20",
+                "12",
+                "15"
+                ]
+                },
+                {
+                "type": "multiple",
+                "difficulty": "easy",
+                "category": "General Knowledge",
+                "question": "Which country has the union jack in its flag?",
+                "correct_answer": "New Zealand",
+                "incorrect_answers": [
+                "South Africa",
+                "Canada",
+                "Hong Kong"
+                ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "category": "Geography",
+                    "question": "In which city, is the Big Nickel located in Canada?",
+                    "correct_answer": "Sudbury, Ontario",
+                    "incorrect_answers": [
+                    "Calgary, Alberta",
+                    "Halifax, Nova Scotia ",
+                    "Victoria, British Columbia"
+                    ]
+                    },
+                    {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "category": "Geography",
+                    "question": "Which of the following Inuit languages was the FIRST to use a unique writing system not based on the Latin alphabet?",
+                    "correct_answer": "Inuktitut",
+                    "incorrect_answers": [
+                    "Inuinnaqtun",
+                    "Greenlandic",
+                    "Inupiat"
+                    ]
+                    },
+                    {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "category": "Geography",
+                    "question": "Which of these cities has a 4&deg; East longitude. ",
+                    "correct_answer": "Amsterdam",
+                    "incorrect_answers": [
+                    "Rio de Janero",
+                    "Toronto",
+                    "Hong Kong"
+                    ]
+                    }
+        ]
+    }
