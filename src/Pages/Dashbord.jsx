@@ -1,49 +1,47 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { Table, Thead, Tbody, Tr, Th, Td, Heading } from '@chakra-ui/react';
 
-const Dashbord = () => {
-    
-    const[leaderboarddata,setLeadboardData]=useState([]);
+const Dashboard = () => {
+  const [leaderboardData, setLeaderboardData] = useState([]);
 
-    const getData=async()=>{
-        try {
-            const response =await axios.get();
-            const data = res.data
-            setLeadboardData(data);
-
-        } catch (error) {
-            console.log('Error on leaderboard data' ,error)
-        }
+  const getData = async () => {
+    try {
+      const response = await axios.get('https://dark-erin-frog.cyclic.app/results');
+      const data = response.data;
+      setLeaderboardData(data);
+    } catch (error) {
+      console.log('Error fetching leaderboard data:', error);
     }
+  };
 
-    useEffect(()=>{
-        getData();
-    },[])
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <div>
-       <h1>Leaderboard</h1>
-          <table>
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              {leaderboarddata.map((user, index) => (
-                <tr key={index}>
-                  <td>{index + 1}</td>
-                  <td>{user.name}</td>
-                  <td>{user.score}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
+      <Heading as="h1" mb={4}>Leaderboard</Heading>
+      <Table variant="striped">
+        <Thead>
+          <Tr>
+            <Th>Rank</Th>
+            <Th>Name</Th>
+            <Th>Score</Th>
+          </Tr>
+        </Thead>
+        <Tbody>
+          {leaderboardData?.map((user, index) => (
+            <Tr key={index}>
+              <Td>{index + 1}</Td>
+              <Td>{user.name}</Td>
+              <Td>{user.score}</Td>
+            </Tr>
+          ))}
+        </Tbody>
+      </Table>
     </div>
-  )
-}
+  );
+};
 
-export default Dashbord
+export default Dashboard;
